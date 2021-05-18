@@ -1,0 +1,19 @@
+About the data:
+Data is collected from users using AC which is connected to the company’s cloud and is stored within a database. Whenever the user’s AC is connected
+to the internet through IoT the data from the sensors are cached and sent at a certain frequency or whenever the user performs any controls. 
+All the features with their timestamp and device Id is stored. As data is collected from many users at different points of time 
+with possibly missing values it is important to clean the data and bring it to a format that will be helpful for our analysis. 
+We are interested in understanding how the candidate will use the data "open-ac-udata-sample-dataset.csv" and perform the below:
+
+Problem Statement:
+1) Perform EDA on that full dataset and share any userful insights
+2) How do you identify or group similiar users usign ML based on common behaviours exhibited by the users
+3) Based on the online user's behaviour, perform missing value imputation when device is offline  (i.e) predict user offline behaviour based on his/her online behaviour
+
+Points to note:
+* behaviour analysis means how various users are perfoming similiar operation around same timeframe  or share common preferences like temperatures (ex) user preferring cold temperatures like 18C or users preferring warm like 26C etc
+* offline definition: the device is considered offline when there are no successive controls (use lastcommand field) for a period of 12 hrs 
+
+The candidate is expected to use pyspark/python/dask to handle the above and choice of ML algorithms (if required) is left to the candidate.
+
+We expect the candidate to take a couple of days or so and then share the finished code/jupyter notebook/etc and appear for a 30-45 mins discussion to go over his/her findings.
